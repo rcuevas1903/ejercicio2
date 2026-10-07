@@ -17,14 +17,14 @@
  
 <a-scene
   info-message="htmlSrc: #messageText"
-  model-viewer="gltfModel: #skyline; title: R34 skyline"
+  model-viewer="gltfModel: #F_robot_animated; title: R34 skyline"
   xr-mode-ui="XRMode: xr">
   <a-assets timeout="10000">
  
-    <a-asset-item id="skyline"
-      src="skyline.glb"
+    <a-asset-item id="F_robot_animated"
+      src="F_robot_animated.glb"
       response-type="arraybuffer"></a-asset-item>
- 
+   <audio  id="musica" src="musica.mp3" preload="auto"> </audio>
     <img id="shadow" src="shadow.png">
     <a-asset-item id="messageText" src="message.html"></a-asset-item>
   </a-assets>
